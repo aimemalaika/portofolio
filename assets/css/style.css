@@ -43,7 +43,7 @@ body {
   margin-top: 90px;
   background-image: url(../images/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
@@ -75,6 +75,16 @@ body {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 35px;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.social-icons li {
+  list-style-type: none;
 }
 
 .social-icons a {

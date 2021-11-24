@@ -7,15 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AIME MALAIKA - Portofolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
   <header class="toolbar">
     <div class="logo">
-      <p>Welcome</p>
+      <a href="#">Welcome</a>
     </div>
     <div class="toggle-menu">
-      <p>&#9776;</p>
+      <input type="checkbox" id="nav-checkbox">
+      <label for="nav-checkbox" class="open-menu">
+        <i class="fa fa-bars"></i>
+      </label>
+      <nav class="navigation">
+        <label for="nav-checkbox" class="close-menu">
+          <i class="fa fa-close"></i>
+        </label>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <section class="headline">
@@ -37,6 +51,9 @@
         <a href="#"><img src="./assets/images/github.svg" alt="github icon"></a>
         <a href="#"><img src="./assets/images/angellist.svg" alt="angellist icon"></a>
       </div>
+      <button class="move-down-arrow">
+        <i class="fa fa-chevron-down"></i>
+      </button>
     </div>
   </section>
 </body>

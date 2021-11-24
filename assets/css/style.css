@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #1e2823;
+}
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  position: fixed;
+  width: 90%;
+}
+.logo, .toggl-emenu{
+  padding: 10px, 12px, 10px, 12px;
+}
+.logo p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+.toggl-emenu p{
+  font-size: 40px;
+  line-height: 20px;
+  margin: 0;
+}

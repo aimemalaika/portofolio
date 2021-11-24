@@ -63,11 +63,11 @@ body {
 
 .introduction .greeting {
   margin-top: 0;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .introduction .describe {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .introduction .explanations {
@@ -110,8 +110,7 @@ body {
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -119,7 +118,6 @@ body {
   width: calc(100% - 10%);
   height: 100%;
   padding: 10% 5%;
-  display: none;
 }
 
 .navigation ul {
@@ -135,7 +133,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .navigation a:hover {
@@ -161,6 +159,7 @@ body {
   display: none;
 }
 
-#nav-checkbox:checked~.navigation {
+#nav-checkbox:checked ~ .navigation {
   display: flex;
+  flex-direction: column;
 }

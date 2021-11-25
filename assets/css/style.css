@@ -431,7 +431,7 @@ body {
   margin: 40px auto;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
   text-align: center;
 }
 

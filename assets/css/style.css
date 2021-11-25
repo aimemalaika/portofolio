@@ -170,14 +170,14 @@ body {
   display: none;
 }
 
-#nav-checkbox:checked~.navigation {
+#nav-checkbox:checked ~ .navigation {
   display: flex;
   flex-direction: column;
   animation: slide-right 1s ease;
   left: 0;
 }
 
-#nav-checkbox:not(:checked)~.navigation {
+#nav-checkbox:not(:checked) ~ .navigation {
   animation: slide-left 1s ease;
   left: -100%;
   display: none;
@@ -250,7 +250,7 @@ body {
 .about-my-knowleadge {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   padding: 0;
 }
 
@@ -454,7 +454,7 @@ body {
   border: 1px solid #d0d9d4;
   padding: 15px 16px;
   font-size: 15px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #6b778c;
   line-height: 1.5;
 }
@@ -464,10 +464,14 @@ body {
   margin: 20px auto;
 }
 
-.myemailaddress a {
+.myemailaddress {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
+}
+
+.contact-form {
+  margin: 80px auto;
 }

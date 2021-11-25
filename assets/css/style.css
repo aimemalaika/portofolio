@@ -120,9 +120,7 @@ body {
 }
 
 .navigation {
-  display: none;
   position: fixed;
-  left: 0;
   top: 0;
   background-color: #fff;
   width: calc(100% - 10%);
@@ -172,4 +170,104 @@ body {
 #nav-checkbox:checked ~ .navigation {
   display: flex;
   flex-direction: column;
+  animation: slide-right 1s ease;
+  left: 0;
+}
+
+#nav-checkbox:not(:checked) ~ .navigation {
+  animation: slide-left 1s ease;
+  left: -100%;
+}
+
+@keyframes slide-right {
+  0% {left: -100%;}
+  100% {left: 0;}
+}
+
+@keyframes slide-left {
+  0% {left: 0;}
+  100% {left: -100%;}
+}
+
+.achieved-work {
+  background-color: #fff;
+  padding: 0 24px;
+}
+
+.section-title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 24px;
+}
+.section-title-separators{
+  border: 3px solid #36b37e;
+  width: 48px;
+  margin-bottom: 48px;
+}
+
+.card{
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.project-description{
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid #d0d9d4;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-description h3{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 16px auto;
+}
+
+.achievementlist {
+  list-style-type: none;
+  display: grid;
+  padding: 0;
+}
+
+.projectimages {
+  width: 100%;
+  background-color: #ebf0ee;
+}
+
+.languages{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 16px auto;
+}
+
+.languages li{
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  Padding: 8px 12px;
+  margin: 5px auto;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.toggle-projectview{
+  background-color: #36b37f;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: auto;
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 9px;
 }

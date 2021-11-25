@@ -170,14 +170,14 @@ body {
   display: none;
 }
 
-#nav-checkbox:checked~.navigation {
+#nav-checkbox:checked ~ .navigation {
   display: flex;
   flex-direction: column;
   animation: slide-right 1s ease;
   left: 0;
 }
 
-#nav-checkbox:not(:checked)~.navigation {
+#nav-checkbox:not(:checked) ~ .navigation {
   animation: slide-left 1s ease;
   left: -100%;
   display: none;

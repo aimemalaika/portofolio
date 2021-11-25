@@ -170,14 +170,14 @@ body {
   display: none;
 }
 
-#nav-checkbox:checked ~ .navigation {
+#nav-checkbox:checked~.navigation {
   display: flex;
   flex-direction: column;
   animation: slide-right 1s ease;
   left: 0;
 }
 
-#nav-checkbox:not(:checked) ~ .navigation {
+#nav-checkbox:not(:checked)~.navigation {
   animation: slide-left 1s ease;
   left: -100%;
   display: none;
@@ -203,7 +203,8 @@ body {
   }
 }
 
-.achieved-work {
+.achieved-work,
+.about-section {
   background-color: #fff;
   padding: 0 24px;
 }
@@ -245,9 +246,11 @@ body {
   margin: 16px auto;
 }
 
-.achievementlist {
+.achievementlist,
+.about-my-knowleadge {
   list-style-type: none;
   display: grid;
+  grid-template-columns: repeat(1fr);
   padding: 0;
 }
 
@@ -260,7 +263,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
   flex-wrap: wrap;
   margin: 16px 0;
@@ -396,4 +399,75 @@ body {
 .project-button-wrapper {
   margin-bottom: 10px;
   margin-top: 25px;
+}
+
+.about-section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.button-wrapper-center {
+  text-align: center;
+  margin: 36px auto;
+}
+
+.about-tag-image {
+  width: 70%;
+  margin: 15%;
+}
+
+.about-my-knowleadge .card {
+  background-color: #ebf0ee;
+  text-align: center;
+  width: 100%;
+}
+
+.about-my-knowleadge .image-card {
+  width: 80px;
+  height: 80px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  text-align: center;
+}
+
+.about-description ul li {
+  background-color: #fff;
+  color: #36b37e;
+}
+
+.about-me-second-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 35px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  padding: 15px 16px;
+  font-size: 15px;
+  font-weight: 400px;
+  color: #6b778c;
+  line-height: 1.5;
+}
+
+.form-group {
+  display: flex;
+  margin: 20px auto;
+}
+
+.myemailaddress a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }

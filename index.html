@@ -62,9 +62,7 @@
     <hr class="section-title-separators">
     <ul class="achievementlist">
       <li class="card">
-        <div class="project-image">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name">
-        </div>
+        <img class="projectimages" src="assets/images/project.png" alt="my project name">
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -73,7 +71,9 @@
             <li>JavaScript</li>
             <li>JavaScript</li>
           </ul>
-          <button class="toggle-projectview">See Project</button>
+          <div class="project-button-wrapper">
+            <a href="#project-modal" class="success-button">See Project</a>
+          </div>
         </div>
       </li>
       <li class="card">
@@ -88,7 +88,9 @@
             <li>JavaScript</li>
             <li>JavaScript</li>
           </ul>
-          <button class="toggle-projectview">See Project</button>
+          <div class="project-button-wrapper">
+            <a href="#project-modal" class="success-button">See Project</a>
+          </div>
         </div>
       </li>
       <li class="card">
@@ -103,7 +105,9 @@
             <li>JavaScript</li>
             <li>JavaScript</li>
           </ul>
-          <button class="toggle-projectview">See Project</button>
+          <div class="project-button-wrapper">
+            <a href="#project-modal" class="success-button">See Project</a>
+          </div>
         </div>
       </li>
       <li class="card">
@@ -118,7 +122,9 @@
             <li>JavaScript</li>
             <li>JavaScript</li>
           </ul>
-          <button class="toggle-projectview">See Project</button>
+          <div class="project-button-wrapper">
+            <a href="#project-modal" class="success-button">See Project</a>
+          </div>
         </div>
       </li>
       <li class="card">
@@ -133,7 +139,9 @@
             <li>JavaScript</li>
             <li>JavaScript</li>
           </ul>
-          <button class="toggle-projectview">See Project</button>
+          <div class="project-button-wrapper">
+            <a href="#project-modal" class="success-button">See Project</a>
+          </div>
         </div>
       </li>
       <li class="card">
@@ -148,10 +156,36 @@
             <li>JavaScript</li>
             <li>JavaScript</li>
           </ul>
-          <button class="toggle-projectview">See Project</button>
+          <div class="project-button-wrapper">
+            <a href="#project-modal" class="success-button">See Project</a>
+          </div>
         </div>
       </li>
     </ul>
+    <div id="project-modal" class="achievement-modal">
+      <div class="modal">
+        <a href="#" class="close-menu modal-close"><i class="fa fa-close"></i></a>
+        <img class="projectimages modal-banner" src="assets/images/project.png" alt="my project name">
+        <h2 class="modal-title">Keeping track of hundreds of components</h2>
+        <ul class="languages languages-left">
+          <li>Html</li>
+          <li>Css</li>
+          <li>JavaScript</li>
+          <li>JavaScript</li>
+        </ul>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s
+          with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it 1960s with the relea
+        </p>
+        <ul class="modal-buttons">
+          <li><a href="#" class="success-button medium-size">See Live <i class="fa fa-external-link"></i></a></li>
+          <li><a href="#" class="success-button medium-size">See Source <i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 </body>
 

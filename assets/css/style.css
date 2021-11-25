@@ -7,6 +7,10 @@
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -34,7 +38,6 @@ body {
   font-weight: 600;
   font-size: 20px;
   color: inherit;
-  text-decoration: none;
 }
 
 .headline {
@@ -108,11 +111,12 @@ body {
 }
 
 .close-menu {
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   font-size: 20px;
   align-self: flex-end;
   cursor: pointer;
+  color: #67798e;
 }
 
 .close-menu:hover {
@@ -137,7 +141,6 @@ body {
 }
 
 .navigation a {
-  text-decoration: none;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -167,26 +170,37 @@ body {
   display: none;
 }
 
-#nav-checkbox:checked ~ .navigation {
+#nav-checkbox:checked~.navigation {
   display: flex;
   flex-direction: column;
   animation: slide-right 1s ease;
   left: 0;
 }
 
-#nav-checkbox:not(:checked) ~ .navigation {
+#nav-checkbox:not(:checked)~.navigation {
   animation: slide-left 1s ease;
   left: -100%;
+  display: none;
 }
 
 @keyframes slide-right {
-  0% {left: -100%;}
-  100% {left: 0;}
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes slide-left {
-  0% {left: 0;}
-  100% {left: -100%;}
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
 }
 
 .achieved-work {
@@ -194,7 +208,7 @@ body {
   padding: 0 24px;
 }
 
-.section-title{
+.section-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -202,20 +216,21 @@ body {
   margin-top: 50px;
   margin-bottom: 24px;
 }
-.section-title-separators{
+
+.section-title-separators {
   border: 3px solid #36b37e;
   width: 48px;
   margin-bottom: 48px;
 }
 
-.card{
+.card {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   overflow: hidden;
   margin: 20px auto;
 }
 
-.project-description{
+.project-description {
   padding: 16px;
   text-align: center;
   border-top: 1px solid #d0d9d4;
@@ -223,7 +238,7 @@ body {
   border-top-right-radius: 8px;
 }
 
-.project-description h3{
+.project-description h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -241,26 +256,26 @@ body {
   background-color: #ebf0ee;
 }
 
-.languages{
+.languages {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 0;
   flex-wrap: wrap;
-  margin: 16px auto;
+  margin: 16px 0;
 }
 
-.languages li{
+.languages li {
   background-color: #ebf0ee;
   border-radius: 4px;
   Padding: 8px 12px;
-  margin: 5px auto;
+  margin: 5px;
   font-size: 12px;
   font-weight: 600;
 }
 
-.toggle-projectview{
+.success-button {
   background-color: #36b37f;
   font-weight: 500;
   font-size: 17px;
@@ -268,6 +283,117 @@ body {
   margin: auto;
   border: none;
   color: #fff;
-  padding: 12px;
+  padding: 10px 12px;
   border-radius: 9px;
+}
+
+.achievement-modal {
+  position: fixed;
+  display: none;
+  background-color: #48484880;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.modal {
+  background-color: #fff;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.modal-banner {
+  border-radius: 8px;
+}
+
+.languages-left {
+  justify-content: initial;
+  margin-top: 0;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.achievement-modal p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+}
+
+.modal-buttons {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.medium-size {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 8px 12px;
+}
+
+.success-button:hover {
+  background-color: #218838;
+}
+
+.modal-close {
+  position: absolute;
+  left: 80%;
+  top: 8%;
+  color: rgb(136, 12, 12);
+  font-size: 20px;
+  padding: 3px 6px;
+  border: 1px solid rgb(136, 12, 12);
+  border-radius: 50%;
+}
+
+#project-modal:target {
+  display: block;
+  animation: slide-up 1s ease;
+}
+
+#project-modal:not(:target) {
+  animation: slide-down 1s ease;
+}
+
+@keyframes slide-up {
+  0% {
+    margin-top: 10000px;
+  }
+
+  100% {
+    margin-top: 16px;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    margin-top: 16px;
+  }
+
+  100% {
+    margin-top: 10000px;
+  }
+}
+
+.project-button-wrapper {
+  margin-bottom: 10px;
+  margin-top: 25px;
 }

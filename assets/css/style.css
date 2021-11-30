@@ -448,6 +448,10 @@ body {
   color: #172b4d;
 }
 
+.form-control textarea {
+  height: 170px;
+}
+
 .form-control {
   width: 100%;
   border-radius: 4px;
@@ -474,4 +478,13 @@ body {
 
 .contact-form {
   margin: 80px auto;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-top: 25px;
 }

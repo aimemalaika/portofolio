@@ -1,10 +1,10 @@
 @font-face {
   font-family: Inter;
-  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\wght.ttf);
 }
 
 * {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -206,6 +206,18 @@ body {
 .achieved-work,
 .about-section {
   background-color: #fff;
+}
+
+.about-section {
+  background-image: url(../images/footer_banner.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-top,
+.about-my-knowleadge,
+.about-me-second-text,
+.contact-form {
   padding: 0 24px;
 }
 
@@ -279,6 +291,7 @@ body {
 }
 
 .success-button {
+  cursor: pointer;
   background-color: #36b37f;
   font-weight: 500;
   font-size: 17px;
@@ -353,6 +366,11 @@ body {
 }
 
 .success-button:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.success-button:active {
   background-color: #218838;
 }
 
@@ -448,20 +466,44 @@ body {
   color: #172b4d;
 }
 
+.form-group textarea {
+  height: 114px;
+}
+
+.form-control::placeholder {
+  color: #6b778c;
+}
+
 .form-control {
-  width: 100%;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
   padding: 15px 16px;
   font-size: 15px;
   font-weight: 400;
-  color: #6b778c;
+  color: #091e42;
   line-height: 1.5;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.form-control:focus:invalid ~ .error-msg {
+  display: block;
+}
+
+.form-control:valid {
+  border: 1px solid #218838;
 }
 
 .form-group {
   display: flex;
-  margin: 20px auto;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .myemailaddress {
@@ -474,4 +516,21 @@ body {
 
 .contact-form {
   margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-top: 25px;
+}
+
+.about-top {
+  background-image: url(../images/about-me-mobile.svg), url(../images/image-about-two.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
 }

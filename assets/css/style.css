@@ -458,7 +458,7 @@ body {
 }
 
 .form-control {
-  width: 100%;
+  width: 90%;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
   padding: 15px 16px;
@@ -468,8 +468,17 @@ body {
   line-height: 1.5;
 }
 
+.form-control:invalid ~ .error-msg{
+  display: block;
+}
+
+.form-control:valid {
+  border: 1px solid #218838;
+}
+
 .form-group {
   display: flex;
+  flex-direction: column;
   margin: 20px auto;
 }
 
@@ -492,4 +501,11 @@ body {
 
 .footer p {
   margin-top: 25px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+  display: none;
 }

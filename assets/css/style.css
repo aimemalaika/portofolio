@@ -206,6 +206,15 @@ body {
 .achieved-work,
 .about-section {
   background-color: #fff;
+}
+
+.about-section {
+  background-image: url(../images/footer_banner.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-top, .about-my-knowleadge, .about-me-second-text, .contact-form {
   padding: 0 24px;
 }
 
@@ -279,6 +288,7 @@ body {
 }
 
 .success-button {
+  cursor: pointer;
   background-color: #36b37f;
   font-weight: 500;
   font-size: 17px;
@@ -457,18 +467,21 @@ body {
   height: 114px;
 }
 
+.form-control::placeholder {
+  color: #6b778c;
+}
+
 .form-control {
-  width: 90%;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
   padding: 15px 16px;
   font-size: 15px;
   font-weight: 400;
-  color: #6b778c;
+  color: #091e42;
   line-height: 1.5;
 }
 
-.form-control:invalid ~ .error-msg{
+.form-control:focus:invalid ~ .error-msg{
   display: block;
 }
 
@@ -479,7 +492,8 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .myemailaddress {
@@ -492,6 +506,8 @@ body {
 
 .contact-form {
   margin: 80px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -504,8 +520,14 @@ body {
 }
 
 .error-msg {
+  display: none;
   color: red;
   font-size: 12px;
   margin-top: 10px;
-  display: none;
+}
+
+.about-top {
+  background-image: url(../images/about-me-mobile.svg), url(../images/image-about-two.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
 }

@@ -214,7 +214,10 @@ body {
   background-position: bottom right;
 }
 
-.about-top, .about-my-knowleadge, .about-me-second-text, .contact-form {
+.about-top,
+.about-my-knowleadge,
+.about-me-second-text,
+.contact-form {
   padding: 0 24px;
 }
 
@@ -481,7 +484,7 @@ body {
   line-height: 1.5;
 }
 
-.form-control:focus:invalid ~ .error-msg{
+.form-control:focus:invalid ~ .error-msg {
   display: block;
 }
 

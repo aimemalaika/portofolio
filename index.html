@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AIME MALAIKA - Portofolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <script src="https://use.fontawesome.com/75d401af0c.js"></script>
 </head>
 
@@ -24,6 +25,15 @@
         <label for="nav-checkbox" class="close-menu">
           <i class="fa fa-close"></i>
         </label>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-desktop">
+      <nav class="navbar-desktop">
         <ul>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
@@ -249,28 +259,42 @@
         </div>
       </li>
     </ul>
-    <h3 class="about-me-second-text">
-      I'm always interested in hearing about new projects, so if you'd like to
-      chat please get in touch.
-    </h3>
-    <form class="contact-form" action="https://formspree.io/f/mgedwpej" method="post">
-      <div class="form-group">
-        <input class="form-control" type="text" required minlength="3" maxlength="30" name="fullname"
-          placeholder="Full name" />
-        <span class="error-msg">Please type your name</span>
-      </div>
-      <div class="form-group">
-        <input class="form-control" type="email" name="_replyto" placeholder="Email address" required />
-        <span class="error-msg">Please enter a valid email address</span>
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" maxlength="500" name="message" placeholder="Enter text here" required></textarea>
-        <span class="error-msg">Please enter a message</span>
-      </div>
-      <div class="button-wrapper-center">
-        <input type="submit" class="success-button" value="Get in touch" />
-      </div>
-    </form>
+    <div class="form-details">
+      <h3 class="about-me-second-text">
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h3>
+      <form class="contact-form" action="https://formspree.io/f/mgedwpej" method="post">
+        <div class="form-group fullname-mobile">
+          <input class="form-control" type="text" required minlength="3" maxlength="30" name="fullname"
+            placeholder="Full name" />
+          <span class="error-msg">Please type your name</span>
+        </div>
+        <div class="group-input-contact">
+          <div class="form-group">
+            <input class="form-control" type="text" required minlength="3" maxlength="30" name="firstname"
+              placeholder="First name" />
+            <span class="error-msg">Please type your first name</span>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" required minlength="3" maxlength="30" name="lastname"
+              placeholder="Last name" />
+            <span class="error-msg">Please type your last name</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="email" name="_replyto" placeholder="Email address" required />
+          <span class="error-msg">Please enter a valid email address</span>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" maxlength="500" name="message" placeholder="Enter text here" required></textarea>
+          <span class="error-msg">Please enter a message</span>
+        </div>
+        <div class="button-wrapper-center contact-button-wrapper">
+          <input type="submit" class="success-button" value="Get in touch" />
+        </div>
+      </form>
+    </div>
   </section>
   <footer class="footer">
     <ul class="social-icons">

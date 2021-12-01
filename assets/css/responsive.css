@@ -53,6 +53,10 @@
     padding: 0 135px;
   }
 
+  .achieved-work {
+    padding-top: 100px;
+  }
+
   .about-top {
     background-image: url(../images/illustration-about-me-2-desktop.png), url(../images/illustration-about-me-desktop-one.svg);
     background-repeat: no-repeat, no-repeat;

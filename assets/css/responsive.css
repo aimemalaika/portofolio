@@ -71,14 +71,13 @@
   }
 
   .footer {
-    border-top: 1px solid #dFe1e6;
+    border-top: 1px solid #dfe1e6;
   }
 
   .headline {
     background-image: url(../images/Header-llustration-desktop.svg);
     background-position: inherit;
     margin-top: -90px;
-    ;
     background-attachment: inherit;
   }
 

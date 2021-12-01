@@ -106,7 +106,19 @@ body {
   font-size: 20px;
 }
 
-.open-menu:hover, .menu-desktop ul li a:hover {
+.navigation a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
+.navigation a:hover {
+  color: #213d81;
+}
+
+.open-menu:hover,
+.menu-desktop ul li a:hover {
   color: #213d81;
 }
 
@@ -138,17 +150,6 @@ body {
 
 .navigation li {
   height: 56px;
-}
-
-.navigation a {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #3a4a42;
-}
-
-.navigation a:hover {
-  color: #213d81;
 }
 
 .move-down-arrow {

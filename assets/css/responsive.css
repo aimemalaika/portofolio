@@ -126,4 +126,21 @@
     text-align: left;
     margin: 30px 0;
   }
+
+  .group-input-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .group-input-contact .form-group:first-child {
+    margin-right: 10px;
+  }
+
+  .group-input-contact .form-group:last-child {
+    margin-left: 10px;
+  }
+
+  .fullname-mobile {
+    display: none;
+  }
 }

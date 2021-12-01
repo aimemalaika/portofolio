@@ -1,0 +1,126 @@
+@media screen and (min-width: 992px) {
+  .toggle-menu {
+    display: none;
+  }
+
+  .introduction {
+    padding: 200px 260px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-desktop ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .menu-desktop ul li {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  .menu-desktop ul li a {
+    text-transform: capitalize;
+    color: #3a4a42;
+    font-weight: 600;
+  }
+
+  .achievementlist,
+  .about-my-knowleadge {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: inherit !important;
+  }
+
+  .achieved-work,
+  .about-top,
+  .footer,
+  .about-my-knowleadge {
+    padding: 0 135px;
+  }
+
+  .about-top {
+    background-image: url(../images/illustration-about-me-2-desktop.png), url(../images/illustration-about-me-desktop-one.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, top right;
+    padding-top: 100px;
+  }
+
+  .section-title,
+  .about-section p {
+    margin-left: 126px;
+    margin-right: 126px;
+  }
+
+  .footer p {
+    display: none;
+  }
+
+  .footer {
+    border-top: 1px solid #dFe1e6;
+  }
+
+  .headline {
+    background-image: url(../images/Header-llustration-desktop.svg);
+    background-position: inherit;
+    margin-top: -90px;
+    ;
+    background-attachment: inherit;
+  }
+
+  .toolbar {
+    background-color: transparent;
+    position: relative;
+  }
+
+  .about-section {
+    background-image: url(../images/contact-footer-left.svg), url(../images/contact-footer-two.svg), url(../images/illustration-3-contact-desktop.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, bottom left, 15% 96%;
+  }
+
+  .social-icons {
+    padding: 15px 0;
+  }
+
+  .form-details {
+    grid-template-columns: 40% 60%;
+    padding: 0 135px;
+  }
+
+  .about-me-second-text,
+  .contact-form {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  .contact-form {
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+
+  .about-me-second-text {
+    text-align: justify;
+    margin-top: 25%;
+  }
+
+  .button-wrapper-center {
+    text-align: left;
+    margin: 30px 0;
+  }
+}

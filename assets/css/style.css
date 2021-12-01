@@ -106,7 +106,7 @@ body {
   font-size: 20px;
 }
 
-.open-menu:hover {
+.open-menu:hover, .menu-desktop ul li a:hover {
   color: #213d81;
 }
 
@@ -203,6 +203,10 @@ body {
   }
 }
 
+.achieved-work {
+  padding: 0 24px;
+}
+
 .achieved-work,
 .about-section {
   background-color: #fff;
@@ -215,7 +219,6 @@ body {
 }
 
 .about-top,
-.about-my-knowleadge,
 .about-me-second-text,
 .contact-form {
   padding: 0 24px;
@@ -263,7 +266,7 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0;
+  padding: 0 24px;
 }
 
 .projectimages {
@@ -515,14 +518,15 @@ body {
 }
 
 .contact-form {
-  margin: 80px auto;
+  margin: 80px 0;
   display: flex;
   flex-direction: column;
 }
 
 .footer {
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer p {
@@ -533,4 +537,13 @@ body {
   background-image: url(../images/about-me-mobile.svg), url(../images/image-about-two.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, top right;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.form-details {
+  display: grid;
+  grid-template-columns: 1fr;
 }

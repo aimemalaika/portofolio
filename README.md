@@ -35,6 +35,9 @@
 
 Contributions, issues, and feature requests are welcome!
 
+- [Tekle Gebreyohannes(@gtekle)](@gtekle)
+- [Akshitha Reddy(@AkshithaReddy1899)](@AkshithaReddy1899)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!

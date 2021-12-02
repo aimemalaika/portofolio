@@ -35,7 +35,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-## 🤝 Contributing
+## 🤝 Contributors
 
 Thank you to
 

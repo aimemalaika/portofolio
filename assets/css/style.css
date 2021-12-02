@@ -275,6 +275,11 @@ body {
   background-color: #ebf0ee;
 }
 
+.projectimages:hover {
+  transform: scale(1.5) rotate(30deg);
+  transition: all 0.5s;
+}
+
 .languages {
   list-style-type: none;
   display: flex;

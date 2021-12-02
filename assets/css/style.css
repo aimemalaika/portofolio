@@ -77,11 +77,11 @@ body {
 
 @keyframes typing {
   0% {
-    width: 0
+    width: 0;
   }
 
   33% {
-    width: 100%
+    width: 100%;
   }
 
   100% {
@@ -575,8 +575,7 @@ body {
 }
 
 .about-top {
-  background-image: url(../images/about-me-mobile.svg),
-    url(../images/image-about-two.svg);
+  background-image: url(../images/about-me-mobile.svg), url(../images/image-about-two.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, top right;
 }

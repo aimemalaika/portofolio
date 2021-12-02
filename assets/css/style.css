@@ -112,7 +112,6 @@ body {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -533,7 +532,6 @@ body {
 .social-icons li:hover {
   animation: bounce 1.5s ease infinite;
 }
-
 
 .form-group textarea {
   height: 114px;

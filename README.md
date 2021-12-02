@@ -39,8 +39,8 @@ Contributions, issues, and feature requests are welcome!
 
 Thank you to
 
-- [Tekle Gebreyohannes(@gtekle)](@gtekle)
-- [Akshitha Reddy(@AkshithaReddy1899)](@AkshithaReddy1899)
+- [Tekle Gebreyohannes(@gtekle)](https://github.com/gtekle)
+- [Akshitha Reddy(@AkshithaReddy1899)](https://github.com/AkshithaReddy1899)
 
 ## Show your support
 

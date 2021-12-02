@@ -25,7 +25,7 @@
 
 ## Authors
 
-👤 **Author**
+👤 **Aime Malika**
 
 - GitHub: [@aimemalaika](https://github.com/aimemalaika)
 - Twitter: [@Aime_malaika](https://twitter.com/Aime_Malaika)
@@ -34,6 +34,10 @@
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+## 🤝 Contributing
+
+Thank you to
 
 - [Tekle Gebreyohannes(@gtekle)](@gtekle)
 - [Akshitha Reddy(@AkshithaReddy1899)](@AkshithaReddy1899)

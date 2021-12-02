@@ -25,7 +25,7 @@
 
 ## Authors
 
-👤 **Aime Malika**
+👤 **Aime Malaika**
 
 - GitHub: [@aimemalaika](https://github.com/aimemalaika)
 - Twitter: [@Aime_malaika](https://twitter.com/Aime_Malaika)

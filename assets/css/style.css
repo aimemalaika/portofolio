@@ -56,6 +56,8 @@ body {
 }
 
 .introduction {
+  display: flex;
+  flex-direction: column;
   padding: 62px 24px;
   font-style: normal;
   font-weight: bold;
@@ -65,8 +67,26 @@ body {
 }
 
 .introduction .greeting {
-  margin-top: 0;
+  margin-bottom: 0;
   color: #172b4d;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 8s steps(18, end) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .introduction .describe {
@@ -78,6 +98,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 35px;
+  margin-top: 0;
 }
 
 .social-icons {
@@ -88,6 +109,24 @@ body {
 
 .social-icons li {
   list-style-type: none;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 .social-icons a {
@@ -253,6 +292,7 @@ body {
   border-top: 1px solid #d0d9d4;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  background-color: #fff;
 }
 
 .project-description h3 {
@@ -275,6 +315,11 @@ body {
   background-color: #ebf0ee;
 }
 
+.projectimages:hover {
+  transform: scale(1.5) rotate(30deg);
+  transition: all 0.5s;
+}
+
 .languages {
   list-style-type: none;
   display: flex;
@@ -294,9 +339,21 @@ body {
   font-weight: 600;
 }
 
+@keyframes slide-left-right {
+  from {
+    background-position: right;
+  }
+
+  to {
+    background-position: left;
+    background-color: #172b4d;
+  }
+}
+
 .success-button {
   cursor: pointer;
-  background-color: #36b37f;
+  background: linear-gradient(to left, #36b37f 50%, #172b4d 50%) right;
+  background-size: 200%;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -372,6 +429,8 @@ body {
 .success-button:hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  animation: slide-left-right 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .success-button:active {
@@ -470,6 +529,10 @@ body {
   color: #172b4d;
 }
 
+.social-icons li:hover {
+  animation: bounce 1.5s ease infinite;
+}
+
 .form-group textarea {
   height: 114px;
 }
@@ -551,4 +614,8 @@ body {
 
 .group-input-contact {
   display: none;
+}
+
+.project-image-card {
+  overflow: hidden;
 }

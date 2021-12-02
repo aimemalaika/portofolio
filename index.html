@@ -35,9 +35,9 @@
     <div class="menu-desktop">
       <nav class="navbar-desktop">
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#portofolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -73,12 +73,14 @@
       </button>
     </div>
   </section>
-  <section class="achieved-work">
+  <section class="achieved-work" id="portofolio">
     <h2 class="section-title">My Recent Work</h2>
     <hr class="section-title-separators" />
     <ul class="achievementlist">
       <li class="card">
-        <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        <div class="project-image-card">
+          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        </div>
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -93,7 +95,9 @@
         </div>
       </li>
       <li class="card">
-        <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        <div class="project-image-card">
+          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        </div>
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -108,7 +112,9 @@
         </div>
       </li>
       <li class="card">
-        <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        <div class="project-image-card">
+          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        </div>
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -123,7 +129,9 @@
         </div>
       </li>
       <li class="card">
-        <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        <div class="project-image-card">
+          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        </div>
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -138,7 +146,9 @@
         </div>
       </li>
       <li class="card">
-        <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        <div class="project-image-card">
+          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        </div>
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -153,7 +163,9 @@
         </div>
       </li>
       <li class="card">
-        <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        <div class="project-image-card">
+          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
+        </div>
         <div class="project-description">
           <h3>Multi-Post Stories Gain+Glory</h3>
           <ul class="languages">
@@ -200,7 +212,7 @@
       </div>
     </div>
   </section>
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="about-top">
       <h2 class="section-title">About me</h2>
       <hr class="section-title-separators" />
@@ -287,7 +299,8 @@
           <span class="error-msg">Please enter a valid email address</span>
         </div>
         <div class="form-group">
-          <textarea class="form-control" maxlength="500" name="message" placeholder="Enter text here" required></textarea>
+          <textarea class="form-control" maxlength="500" name="message" placeholder="Enter text here"
+            required></textarea>
           <span class="error-msg">Please enter a message</span>
         </div>
         <div class="button-wrapper-center contact-button-wrapper">
@@ -296,7 +309,7 @@
       </form>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <ul class="social-icons">
       <li>
         <a href="#"><img src="./assets/images/twitter.svg" alt="tweeter icon" /></a>

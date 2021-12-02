@@ -56,6 +56,8 @@ body {
 }
 
 .introduction {
+  display: flex;
+  flex-direction: column;
   padding: 62px 24px;
   font-style: normal;
   font-weight: bold;
@@ -65,8 +67,26 @@ body {
 }
 
 .introduction .greeting {
-  margin-top: 0;
+  margin-bottom: 0;
   color: #172b4d;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 8s steps(18, end) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+
+  33% {
+    width: 100%
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .introduction .describe {
@@ -78,6 +98,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 35px;
+  margin-top: 0;
 }
 
 .social-icons {
@@ -253,6 +274,7 @@ body {
   border-top: 1px solid #d0d9d4;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  background-color: #fff;
 }
 
 .project-description h3 {
@@ -303,8 +325,10 @@ body {
   from {
     background-position: right;
   }
+
   to {
     background-position: left;
+    background-color: #172b4d;
   }
 }
 
@@ -568,4 +592,8 @@ body {
 
 .group-input-contact {
   display: none;
+}
+
+.project-image-card {
+  overflow: hidden;
 }

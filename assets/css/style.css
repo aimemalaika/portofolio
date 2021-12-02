@@ -111,10 +111,6 @@ body {
   list-style-type: none;
 }
 
-.social-icons li:hover {
-  animation: bounce 1.5s ease infinite;
-}
-
 @keyframes bounce {
 
   0%,
@@ -533,6 +529,11 @@ body {
   line-height: 52px;
   color: #172b4d;
 }
+
+.social-icons li:hover {
+  animation: bounce 1.5s ease infinite;
+}
+
 
 .form-group textarea {
   height: 114px;

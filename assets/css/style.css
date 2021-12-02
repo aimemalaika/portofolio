@@ -294,9 +294,19 @@ body {
   font-weight: 600;
 }
 
+@keyframes slide-left-right {
+  from {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
+}
+
 .success-button {
   cursor: pointer;
-  background-color: #36b37f;
+  background: linear-gradient(to left, #36b37f 50%, #172b4d 50%) right;
+  background-size: 200%;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -372,6 +382,7 @@ body {
 .success-button:hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  animation: slide-left-right 0.5s;
 }
 
 .success-button:active {
@@ -535,7 +546,8 @@ body {
 }
 
 .about-top {
-  background-image: url(../images/about-me-mobile.svg), url(../images/image-about-two.svg);
+  background-image: url(../images/about-me-mobile.svg),
+    url(../images/image-about-two.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, top right;
 }

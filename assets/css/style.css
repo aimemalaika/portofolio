@@ -70,7 +70,6 @@ body {
   margin-bottom: 0;
   color: #172b4d;
   width: 0;
-  white-space: nowrap;
   overflow: hidden;
   animation: typing 8s steps(18, end) forwards;
 }
@@ -199,6 +198,7 @@ body {
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
+  align-self: center;
 }
 
 .move-down-arrow:hover {
@@ -353,7 +353,7 @@ body {
 .success-button {
   cursor: pointer;
   background: linear-gradient(to left, #36b37f 50%, #172b4d 50%) right;
-  background-size: 200%;
+  background-size: 210%;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;

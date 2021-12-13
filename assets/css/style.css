@@ -163,10 +163,11 @@ body {
 .close-menu {
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 19px;
   align-self: flex-end;
   cursor: pointer;
   color: #67798e;
+  margin-right: 11px;
 }
 
 .close-menu:hover {
@@ -206,21 +207,20 @@ body {
   border: 1px solid #213d81;
 }
 
-#nav-checkbox {
-  display: none;
+.animate-left {
+  animation: slide-left 1s ease forwards;
+  left: -100%;
 }
 
-#nav-checkbox:checked ~ .navigation {
-  display: flex;
-  flex-direction: column;
-  animation: slide-right 1s ease;
+.animate-right {
+  animation: slide-right 1s ease forwards;
   left: 0;
 }
 
-#nav-checkbox:not(:checked) ~ .navigation {
-  animation: slide-left 1s ease;
+.navigation {
   left: -100%;
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes slide-right {

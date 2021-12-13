@@ -7,6 +7,10 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }

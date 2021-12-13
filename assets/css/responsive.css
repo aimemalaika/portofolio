@@ -95,6 +95,11 @@
     background-color: transparent;
     position: relative;
   }
+  
+  .sticky {
+    position: fixed;
+    background-color: #fff;
+  }
 
   .about-section {
     background-image: url(../images/contact-footer-left.svg), url(../images/contact-footer-two.svg), url(../images/illustration-3-contact-desktop.svg);

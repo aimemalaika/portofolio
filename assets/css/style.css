@@ -245,7 +245,7 @@ body {
 }
 
 .achieved-work {
-  padding: 0 24px;
+  padding: 90px 24px 0 24px;
 }
 
 .achieved-work,
@@ -257,6 +257,7 @@ body {
   background-image: url(../images/footer_banner.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
+  padding-top: 50px;
 }
 
 .about-top,

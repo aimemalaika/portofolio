@@ -115,7 +115,6 @@ body {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -189,7 +188,6 @@ body {
   width: calc(100% - 10%);
   height: 100%;
   padding: 10% 5%;
-
 }
 
 .navigation ul {
@@ -560,7 +558,7 @@ body {
   margin-top: 10px;
 }
 
-.form-control:focus:invalid~.error-msg {
+.form-control:focus:invalid ~ .error-msg {
   display: block;
 }
 

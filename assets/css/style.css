@@ -7,6 +7,10 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -163,10 +167,11 @@ body {
 .close-menu {
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 19px;
   align-self: flex-end;
   cursor: pointer;
   color: #67798e;
+  margin-right: 11px;
 }
 
 .close-menu:hover {
@@ -175,7 +180,10 @@ body {
 
 .navigation {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
+  left: -100%;
   background-color: #fff;
   width: calc(100% - 10%);
   height: 100%;
@@ -206,21 +214,14 @@ body {
   border: 1px solid #213d81;
 }
 
-#nav-checkbox {
-  display: none;
-}
-
-#nav-checkbox:checked ~ .navigation {
-  display: flex;
-  flex-direction: column;
-  animation: slide-right 1s ease;
-  left: 0;
-}
-
-#nav-checkbox:not(:checked) ~ .navigation {
-  animation: slide-left 1s ease;
+.animate-left {
+  animation: slide-left 1s ease forwards;
   left: -100%;
-  display: none;
+}
+
+.animate-right {
+  animation: slide-right 1s ease forwards;
+  left: 0;
 }
 
 @keyframes slide-right {
@@ -244,7 +245,7 @@ body {
 }
 
 .achieved-work {
-  padding: 0 24px;
+  padding: 90px 24px 0 24px;
 }
 
 .achieved-work,
@@ -256,6 +257,7 @@ body {
   background-image: url(../images/footer_banner.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
+  padding-top: 50px;
 }
 
 .about-top,

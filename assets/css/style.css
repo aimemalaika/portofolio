@@ -115,6 +115,7 @@ body {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -180,11 +181,15 @@ body {
 
 .navigation {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
+  left: -100%;
   background-color: #fff;
   width: calc(100% - 10%);
   height: 100%;
   padding: 10% 5%;
+
 }
 
 .navigation ul {
@@ -219,12 +224,6 @@ body {
 .animate-right {
   animation: slide-right 1s ease forwards;
   left: 0;
-}
-
-.navigation {
-  left: -100%;
-  display: flex;
-  flex-direction: column;
 }
 
 @keyframes slide-right {
@@ -561,7 +560,7 @@ body {
   margin-top: 10px;
 }
 
-.form-control:focus:invalid ~ .error-msg {
+.form-control:focus:invalid~.error-msg {
   display: block;
 }
 

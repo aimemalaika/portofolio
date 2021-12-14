@@ -187,3 +187,24 @@ const chargeData = () => {
 };
 
 chargeData();
+const openPopup = (element) => {
+    console.log(element.getAttribute('data-index'));
+    document.querySelector('#project-modal').style.display = 'block';
+    setTimeout(() => {
+      document.querySelector('.modal').classList.remove('project-modal-up');
+      document.querySelector('.modal').classList.add('project-modal-down');
+    }, 500);
+  };
+  
+  document.querySelector('#modal-close').addEventListener('click', () => {
+    document.querySelector('.modal').classList.remove('project-modal-down');
+    document.querySelector('.modal').classList.add('project-modal-up');
+    setTimeout(() => {
+      document.querySelector('#project-modal').style.display = 'none';
+    }, 600);
+  });
+  
+  document.querySelectorAll('.opne-modal').forEach((element) => {
+    element.addEventListener('click', () => openPopup(element));
+  });
+  

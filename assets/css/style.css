@@ -454,10 +454,9 @@ body {
   position: absolute;
   left: 75%;
   top: 5%;
-  color: rgb(136, 12, 12);
+  color: #8d8e91;
   font-size: 20px;
   padding: 1px 6px;
-  border: 1px solid rgb(136, 12, 12);
   border-radius: 50%;
 }
 

@@ -20,6 +20,10 @@
     border-radius: 8px;
     align-self: flex-end;
     margin-bottom: 10px;
+    background-color: #ebecf0;
+    border-color: #ebecf0;
+    color: #67798e;
+    margin-right: 0;
   }
 
   .introduction {

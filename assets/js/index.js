@@ -163,7 +163,7 @@ const projects = [
   },
 ];
 
-const chargeData = () => {
+(() => {
   projects.forEach((project, index) => {
     let language = '';
     project.languages.forEach((lang) => {
@@ -184,9 +184,8 @@ const chargeData = () => {
     </li>
     `;
   });
-};
+})();
 
-chargeData();
 const openPopup = (element) => {
   document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
   document.querySelector('#project-banner').setAttribute('src', `assets/images/${projects[element.getAttribute('data-index')].image}`);

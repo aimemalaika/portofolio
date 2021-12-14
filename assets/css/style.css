@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Inter;
-  src: url(../fonts/Inter/Inter-VariableFont_slnt\wght.ttf);
-}
-
 * {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
@@ -196,6 +191,8 @@ body {
 
 .navigation li {
   height: 56px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .move-down-arrow {
@@ -619,4 +616,9 @@ body {
 
 .project-image-card {
   overflow: hidden;
+}
+
+.active {
+  border-bottom: 5px solid #3a4a42;
+  padding-bottom: 10px;
 }

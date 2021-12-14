@@ -113,7 +113,7 @@
 
   .form-details {
     grid-template-columns: 40% 60%;
-    padding: 0 135px;
+    padding: 60px 135px 0 135px;
   }
 
   .about-me-second-text,

@@ -381,7 +381,7 @@ body {
   padding: 16px;
   border-radius: 16px;
   width: 70%;
-  margin: 30px auto auto auto;
+  margin: -200% auto auto auto;
 }
 
 .modal-banner {
@@ -471,21 +471,21 @@ body {
 
 @keyframes slide-up {
   0% {
-    margin-top: 10000px;
+    margin-top: 16px;
   }
 
   100% {
-    margin-top: 16px;
+    margin-top: -200%;
   }
 }
 
 @keyframes slide-down {
   0% {
-    margin-top: 16px;
+    margin-top: -200%;
   }
 
   100% {
-    margin-top: 10000px;
+    margin-top: 16px;
   }
 }
 

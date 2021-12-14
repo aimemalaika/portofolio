@@ -453,7 +453,7 @@ body {
 .modal-close {
   position: absolute;
   left: 75%;
-  top: 15%;
+  top: 5%;
   color: rgb(136, 12, 12);
   font-size: 20px;
   padding: 1px 6px;

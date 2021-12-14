@@ -88,116 +88,25 @@
   <section class="achieved-work" id="portofolio">
     <h2 class="section-title">My Recent Work</h2>
     <hr class="section-title-separators" />
-    <ul class="achievementlist">
-      <li class="card">
-        <div class="project-image-card">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
-        </div>
-        <div class="project-description">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="languages">
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-button-wrapper">
-            <a href="#project-modal" class="success-button">See Project</a>
-          </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project-image-card">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
-        </div>
-        <div class="project-description">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="languages">
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-button-wrapper">
-            <a href="#project-modal" class="success-button">See Project</a>
-          </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project-image-card">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
-        </div>
-        <div class="project-description">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="languages">
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-button-wrapper">
-            <a href="#project-modal" class="success-button">See Project</a>
-          </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project-image-card">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
-        </div>
-        <div class="project-description">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="languages">
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-button-wrapper">
-            <a href="#project-modal" class="success-button">See Project</a>
-          </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project-image-card">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
-        </div>
-        <div class="project-description">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="languages">
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-button-wrapper">
-            <a href="#project-modal" class="success-button">See Project</a>
-          </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="project-image-card">
-          <img class="projectimages" src="assets/images/project.png" alt="my project name" />
-        </div>
-        <div class="project-description">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="languages">
-            <li>Html</li>
-            <li>Css</li>
-            <li>JavaScript</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-button-wrapper">
-            <a href="#project-modal" class="success-button">See Project</a>
-          </div>
-        </div>
-      </li>
-    </ul>
+    <ul class="achievementlist" id="achievementlist"></ul>
     <div id="project-modal" class="achievement-modal">
       <div class="modal">
-        <a href="#" class="close-menu modal-close"><i class="fa fa-close"></i></a>
-        <img class="projectimages modal-banner" src="assets/images/project.png" alt="my project name" />
-        <h2 class="modal-title">Keeping track of hundreds of components</h2>
-        <ul class="languages languages-left">
+        <button type="button" id="modal-close" class="close-menu modal-close"><i class="fa fa-close"></i></button>
+        <div class="project-image-card">
+          <img class="projectimages modal-banner" id="project-banner" src="assets/images/project.png" alt="my project name" />
+        </div>
+        <div class="modal-header">
+          <h2 class="modal-title">Keeping track of hundreds of components</h2>
+          <ul class="modal-buttons desktop-view">
+            <li>
+              <a href="#" class="success-button medium-size">See Live <i class="fa fa-external-link"></i></a>
+            </li>
+            <li>
+              <a href="#" class="success-button medium-size">See Source <i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="languages languages-left" id="laguages-modal">
           <li>Html</li>
           <li>Css</li>
           <li>JavaScript</li>
@@ -213,7 +122,7 @@
           unknown printer took a galley of type and scrambled it 1960s with
           the relea
         </p>
-        <ul class="modal-buttons">
+        <ul class="modal-buttons mobile-view">
           <li>
             <a href="#" class="success-button medium-size">See Live <i class="fa fa-external-link"></i></a>
           </li>

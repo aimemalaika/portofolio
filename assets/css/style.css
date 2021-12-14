@@ -312,9 +312,10 @@ body {
 .projectimages {
   width: 100%;
   background-color: #ebf0ee;
+  margin-bottom: -5px;
 }
 
-.projectimages:hover {
+#achievementlist .projectimages:hover {
   transform: scale(1.5) rotate(30deg);
   transition: all 0.5s;
 }
@@ -377,9 +378,10 @@ body {
 
 .modal {
   background-color: #fff;
-  margin: 16px;
   padding: 16px;
   border-radius: 16px;
+  width: 70%;
+  margin: 30px auto auto auto;
 }
 
 .modal-banner {
@@ -389,6 +391,11 @@ body {
 .languages-left {
   justify-content: initial;
   margin-top: 0;
+}
+
+.modal-header {
+  display: grid;
+  grid-template-columns: 100%;
 }
 
 .modal-title {
@@ -410,12 +417,19 @@ body {
 
 .modal-buttons {
   list-style-type: none;
-  display: flex;
   padding: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.modal-buttons.desktop-view {
+  display: none;
+}
+
+.modal-buttons.mobile-view {
+  display: flex;
 }
 
 .medium-size {
@@ -438,22 +452,21 @@ body {
 
 .modal-close {
   position: absolute;
-  left: 80%;
-  top: 8%;
+  left: 75%;
+  top: 15%;
   color: rgb(136, 12, 12);
   font-size: 20px;
-  padding: 3px 6px;
+  padding: 1px 6px;
   border: 1px solid rgb(136, 12, 12);
   border-radius: 50%;
 }
 
-#project-modal:target {
-  display: block;
-  animation: slide-up 1s ease;
+.project-modal-up {
+  animation: slide-up 1s ease forwards;
 }
 
-#project-modal:not(:target) {
-  animation: slide-down 1s ease;
+.project-modal-down {
+  animation: slide-down 1s ease forwards;
 }
 
 @keyframes slide-up {

@@ -9,6 +9,14 @@
     display: none;
   }
 
+  .modal {
+    width: 50%;
+  }
+
+  .modal-close {
+    left: 70%;
+  }
+
   .introduction {
     padding: 200px 260px;
   }
@@ -153,5 +161,23 @@
 
   .fullname-mobile {
     display: none;
+  }
+
+  .modal-header {
+    grid-template-columns: 70% 30%;
+  }
+
+  .modal-buttons.desktop-view {
+    display: flex;
+  }
+
+  .modal-buttons.mobile-view {
+    display: none;
+  }
+
+  .modal-buttons.desktop-view .medium-size {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 9px;
   }
 }

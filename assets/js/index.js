@@ -115,7 +115,7 @@ const projects = [
   },
   {
     name: 'Bigfish',
-    languages: ['Html', 'Css', 'JavaScript'],
+    languages: ['Html', 'Css', 'JavaScript', 'Rubby'],
     image: 'project.png',
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident doloribus odio sunt, quaerat unde nostrum numquam soluta nam eos voluptas est quas aperiam enim asperiores, exercitationem accusantium quasi saepe deleniti.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id perspiciatis corrupti, in blanditiis dignissimos soluta impedit illo ea. Ea ducimus pariatur dolorum earum distinctio eum possimus esse obcaecati, doloribus architecto.',
     livelink: 'https://aimemalaika.github.io/portofolio',
@@ -188,23 +188,36 @@ const chargeData = () => {
 
 chargeData();
 const openPopup = (element) => {
-    console.log(element.getAttribute('data-index'));
-    document.querySelector('#project-modal').style.display = 'block';
-    setTimeout(() => {
-      document.querySelector('.modal').classList.remove('project-modal-up');
-      document.querySelector('.modal').classList.add('project-modal-down');
-    }, 500);
-  };
-  
-  document.querySelector('#modal-close').addEventListener('click', () => {
-    document.querySelector('.modal').classList.remove('project-modal-down');
-    document.querySelector('.modal').classList.add('project-modal-up');
-    setTimeout(() => {
-      document.querySelector('#project-modal').style.display = 'none';
-    }, 600);
+  document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
+  document.querySelector('#project-banner').setAttribute('src', `/assets/images/${projects[element.getAttribute('data-index')].image}`);
+
+  let language = '';
+  projects[element.getAttribute('data-index')].languages.forEach((lang) => {
+    language += `<li>${lang}</li>`;
   });
-  
-  document.querySelectorAll('.opne-modal').forEach((element) => {
-    element.addEventListener('click', () => openPopup(element));
-  });
-  
+
+  document.querySelector('#laguages-modal').innerHTML = language;
+
+  document.querySelectorAll('.livelink').forEach((alink) => alink.setAttribute('href', projects[element.getAttribute('data-index')].livelink));
+  document.querySelectorAll('.repolink').forEach((alink) => alink.setAttribute('href', projects[element.getAttribute('data-index')].repository));
+
+  document.querySelector('#descriptionmodal').textContent = projects[element.getAttribute('data-index')].description;
+
+  document.querySelector('#project-modal').style.display = 'block';
+  setTimeout(() => {
+    document.querySelector('.modal').classList.remove('project-modal-up');
+    document.querySelector('.modal').classList.add('project-modal-down');
+  }, 500);
+};
+
+document.querySelector('#modal-close').addEventListener('click', () => {
+  document.querySelector('.modal').classList.remove('project-modal-down');
+  document.querySelector('.modal').classList.add('project-modal-up');
+  setTimeout(() => {
+    document.querySelector('#project-modal').style.display = 'none';
+  }, 600);
+});
+
+document.querySelectorAll('.opne-modal').forEach((element) => {
+  element.addEventListener('click', () => openPopup(element));
+});

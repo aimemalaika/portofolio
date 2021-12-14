@@ -172,7 +172,7 @@ const chargeData = () => {
     document.querySelector('#achievementlist').innerHTML += `
     <li class="card">
       <div class="project-image-card">
-        <img class="projectimages" src="/assets/images/${project.image}" alt="${project.name}" />
+        <img class="projectimages" src="assets/images/${project.image}" alt="${project.name}" />
       </div>
       <div class="project-description">
         <h3>${project.name}</h3>
@@ -189,7 +189,7 @@ const chargeData = () => {
 chargeData();
 const openPopup = (element) => {
   document.querySelector('#modal-title').textContent = projects[element.getAttribute('data-index')].name;
-  document.querySelector('#project-banner').setAttribute('src', `/assets/images/${projects[element.getAttribute('data-index')].image}`);
+  document.querySelector('#project-banner').setAttribute('src', `assets/images/${projects[element.getAttribute('data-index')].image}`);
 
   let language = '';
   projects[element.getAttribute('data-index')].languages.forEach((lang) => {

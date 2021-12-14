@@ -11,10 +11,14 @@
 
   .modal {
     width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 
   .modal-close {
-    left: 70%;
+    position: static;
+    border-radius: 8px;
+    align-self: flex-end;
   }
 
   .introduction {

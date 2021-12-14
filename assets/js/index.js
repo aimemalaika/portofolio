@@ -1,6 +1,7 @@
 const navigation = document.querySelector('.navigation');
 const header = document.querySelector('.toolbar');
-const navItems = document.querySelectorAll('.nav-item');
+const navItemsDesktop = document.querySelectorAll('.nav-item-desktop');
+const navItemsMobile = document.querySelectorAll('.nav-item-mobile');
 const expandMenu = () => {
   navigation.classList.remove('animate-left');
   navigation.classList.add('animate-right');
@@ -11,8 +12,8 @@ const closeMenu = () => {
   navigation.classList.add('animate-left');
 };
 
-const setActive = (target = null) => {
-  navItems.forEach((element) => {
+const setActive = (nav, target = null) => {
+  nav.forEach((element) => {
     if (element.getAttribute('href') === target) {
       element.classList.add('active');
     } else {
@@ -31,16 +32,30 @@ document.addEventListener('scroll', () => {
   }
   switch (true) {
     case window.scrollY >= 879.75 && window.scrollY < 2406.75:
-      setActive('#portofolio');
+      setActive(navItemsDesktop, '#portofolio');
       break;
     case window.scrollY >= 2406.75 && window.scrollY < 3257.5:
-      setActive('#about');
+      setActive(navItemsDesktop, '#about');
       break;
     case window.scrollY >= 3257.5:
-      setActive('#contact-form');
+      setActive(navItemsDesktop, '#contact-form');
       break;
     default:
-      setActive();
+      setActive(navItemsDesktop);
+      break;
+  }
+  switch (true) {
+    case window.scrollY >= 1017.5 && window.scrollY < 4856.75:
+      setActive(navItemsMobile, '#portofolio');
+      break;
+    case window.scrollY >= 4856.75 && window.scrollY < 6780.5:
+      setActive(navItemsMobile, '#about');
+      break;
+    case window.scrollY >= 6780.5:
+      setActive(navItemsMobile, '#contact');
+      break;
+    default:
+      setActive(navItemsMobile);
       break;
   }
 });

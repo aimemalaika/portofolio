@@ -220,3 +220,16 @@ document.querySelector('#modal-close').addEventListener('click', () => {
 document.querySelectorAll('.opne-modal').forEach((element) => {
   element.addEventListener('click', () => openPopup(element));
 });
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  for (let i = 0; i < e.target.length; i += 1) {
+    if (e.target[i].classList.contains('form-control')) {
+      if (e.target[i].value === '') {
+        e.target[i].nextElementSibling.style.display = 'block';
+      } else {
+        e.target[i].nextElementSibling.textContent = '';
+      }
+    }
+  }
+});
+

@@ -49,7 +49,7 @@
         <ul>
           <li><a class="nav-item-desktop" href="#portofolio">Portfolio</a></li>
           <li><a class="nav-item-desktop" href="#about">About</a></li>
-          <li><a class="nav-item-desktop" href="#contact-form">Contact</a></li>
+          <li><a class="nav-item-desktop" href="#contact-form-wraper">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -178,12 +178,12 @@
         </div>
       </li>
     </ul>
-    <div id="contact-form" class="form-details">
+    <div id="contact-form-wraper" class="form-details">
       <h3 class="about-me-second-text">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h3>
-      <form  class="contact-form" action="https://formspree.io/f/mgedwpej" method="post">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mgedwpej" method="post" novalidate>
         <div class="form-group fullname-mobile">
           <input class="form-control" type="text" required minlength="3" maxlength="30" name="fullname"
             placeholder="Full name" />
@@ -203,7 +203,7 @@
         </div>
         <div class="form-group">
           <input class="form-control" type="email" name="_replyto" placeholder="Email address" required />
-          <span class="error-msg">Please enter a valid email address</span>
+          <span class="error-msg">Please enter your email address</span>
         </div>
         <div class="form-group">
           <textarea class="form-control" maxlength="500" name="message" placeholder="Enter text here"

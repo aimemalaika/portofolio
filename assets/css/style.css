@@ -563,13 +563,13 @@ body {
 
 .error-msg {
   display: none;
-  color: red;
+  color: #ff6163;
   font-size: 12px;
   margin-top: 10px;
 }
 
 .form-control:focus:invalid ~ .error-msg {
-  display: block;
+  display: none;
 }
 
 .form-control:valid {

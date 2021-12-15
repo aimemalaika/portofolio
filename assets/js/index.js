@@ -221,15 +221,78 @@ document.querySelectorAll('.opne-modal').forEach((element) => {
   element.addEventListener('click', () => openPopup(element));
 });
 
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-  for (let i = 0; i < e.target.length; i += 1) {
-    if (e.target[i].classList.contains('form-control')) {
-      if (e.target[i].value === '') {
-        e.target[i].nextElementSibling.style.display = 'block';
+const validateForm = (formItem) => {
+  let isInvalid = 0;
+  const regex = /\S+@\S+\.\S+/;
+  switch (true) {
+    case formItem.getAttribute('type') === 'email':
+      if (!regex.test(formItem.value)) {
+        formItem.nextElementSibling.innerHTML += 'The email is invalid <br>';
+        isInvalid += 1;
       } else {
-        e.target[i].nextElementSibling.textContent = '';
+        formItem.nextElementSibling.textContent.replace('The email is invalid <br>, ', '');
       }
+      if (formItem.value !== formItem.value.toLowerCase()) {
+        formItem.nextElementSibling.innerHTML += 'The email shoud be in lowercase';
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace('The email shoud be in lowercase', '');
+      }
+      break;
+    case formItem.getAttribute('type') === 'text':
+      if (formItem.value.length > formItem.getAttribute('maxlength')) {
+        formItem.nextElementSibling.innerHTML += `The maximum number of character is ${formItem.getAttribute('maxlength')} <br>`;
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace(`The maximum number of character is ${formItem.getAttribute('maxlength')} <br>`, '');
+      }
+      if (formItem.value.length < formItem.getAttribute('minlength')) {
+        formItem.nextElementSibling.innerHTML += `The minimum number of character is ${formItem.getAttribute('minlength')}`;
+        isInvalid += 1;
+      } else {
+        formItem.nextElementSibling.textContent.replace(`The minimum number of character is ${formItem.getAttribute('maxlength')}`, '');
+      }
+      break;
+    default:
+      break;
+  }
+  if (isInvalid > 0) {
+    formItem.nextElementSibling.style.display = 'block';
+  }
+
+  return isInvalid;
+};
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  let invalid = 0;
+  if (window.screen.width < 992) {
+    document.querySelectorAll('[name="firstname"]').disabled = true;
+    document.querySelectorAll('[name="lastname"]').disabled = true;
+    document.querySelectorAll('[name="fullname"]').disabled = false;
+  } else {
+    document.querySelectorAll('[name="firstname"]').disabled = false;
+    document.querySelectorAll('[name="lastname"]').disabled = false;
+    document.querySelectorAll('[name="fullname"]').disabled = true;
+  }
+  for (let i = 0; i < e.target.length; i += 1) {
+    if (!e.target[i].hasAttribute('disabled')) {
+      if (e.target[i].classList.contains('form-control')) {
+        if (e.target[i].value === '') {
+          invalid += 1;
+          e.target[i].nextElementSibling.innerHTML = `Pease enter your ${e.target[i].getAttribute('placeholder')}<br>`;
+          e.target[i].nextElementSibling.style.display = 'block';
+        } else {
+          e.target[i].nextElementSibling.textContent = '';
+        }
+      }
+      invalid += validateForm(e.target[i]);
     }
+  }
+  if (invalid > 0) {
+    e.preventDefault();
   }
 });
 
+document.querySelectorAll('.form-control').forEach((element) => element.addEventListener('focus', () => {
+  element.nextElementSibling.style.display = 'none';
+}));

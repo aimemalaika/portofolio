@@ -265,15 +265,6 @@ const validateForm = (formItem) => {
 
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
   let invalid = 0;
-  if (window.screen.width < 992) {
-    document.querySelectorAll('[name="firstname"]').disabled = true;
-    document.querySelectorAll('[name="lastname"]').disabled = true;
-    document.querySelectorAll('[name="fullname"]').disabled = false;
-  } else {
-    document.querySelectorAll('[name="firstname"]').disabled = false;
-    document.querySelectorAll('[name="lastname"]').disabled = false;
-    document.querySelectorAll('[name="fullname"]').disabled = true;
-  }
   for (let i = 0; i < e.target.length; i += 1) {
     if (!e.target[i].hasAttribute('disabled')) {
       if (e.target[i].classList.contains('form-control')) {
@@ -296,3 +287,15 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
 document.querySelectorAll('.form-control').forEach((element) => element.addEventListener('focus', () => {
   element.nextElementSibling.style.display = 'none';
 }));
+
+window.addEventListener('resize', () => {
+  if (window.screen.width < 992) {
+    document.querySelector('[name="firstname"]').disabled = true;
+    document.querySelector('[name="lastname"]').disabled = true;
+    document.querySelector('[name="fullname"]').disabled = false;
+  } else {
+    document.querySelector('[name="firstname"]').disabled = false;
+    document.querySelector('[name="lastname"]').disabled = false;
+    document.querySelector('[name="fullname"]').disabled = true;
+  }
+});

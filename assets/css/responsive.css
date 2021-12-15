@@ -9,6 +9,23 @@
     display: none;
   }
 
+  .modal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-close {
+    position: static;
+    border-radius: 8px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    background-color: #ebecf0;
+    border-color: #ebecf0;
+    color: #67798e;
+    margin-right: 0;
+  }
+
   .introduction {
     padding: 200px 260px;
   }
@@ -153,5 +170,23 @@
 
   .fullname-mobile {
     display: none;
+  }
+
+  .modal-header {
+    grid-template-columns: 70% 30%;
+  }
+
+  .modal-buttons.desktop-view {
+    display: flex;
+  }
+
+  .modal-buttons.mobile-view {
+    display: none;
+  }
+
+  .modal-buttons.desktop-view .medium-size {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 9px;
   }
 }

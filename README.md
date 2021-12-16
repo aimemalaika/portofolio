@@ -41,6 +41,8 @@ Thank you to
 
 - [Tekle Gebreyohannes(@gtekle)](https://github.com/gtekle)
 - [Akshitha Reddy(@AkshithaReddy1899)](https://github.com/AkshithaReddy1899)
+- [Tarikwa Tesfa(@tariktesfa)](https://github.com/tariktesfa)
+- [Islam Bahnas(@Banstein)](https://github.com/Banstein)
 
 ## Show your support
 

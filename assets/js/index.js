@@ -281,6 +281,17 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   }
   if (invalid > 0) {
     e.preventDefault();
+  } else {
+    e.preventDefault();
+    localStorage.clear();
+    const userInfo = {
+      firstname: document.querySelector('[name="firstname"]').value,
+      lastname: document.querySelector('[name="lastname"]').value,
+      email: document.querySelector('[name="_replyto"]').value,
+      fullname: document.querySelector('[name="fullname"]').value,
+      messge: document.querySelector('[name="message"]').value,
+    };
+    localStorage.setItem('userdata', JSON.stringify(userInfo));
   }
 });
 

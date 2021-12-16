@@ -162,7 +162,6 @@ const projects = [
     repository: 'https://github.com/aimemalaika/portofolio',
   },
 ];
-
 (() => {
   projects.forEach((project, index) => {
     let language = '';
@@ -184,6 +183,14 @@ const projects = [
     </li>
     `;
   });
+  if (localStorage.getItem('userdata') !== null) {
+    const data = JSON.parse(localStorage.getItem('userdata'));
+    document.querySelector('[name="firstname"]').value = data.firstname;
+    document.querySelector('[name="lastname"]').value = data.lastname;
+    document.querySelector('[name="_replyto"]').value = data.email;
+    document.querySelector('[name="fullname"]').value = data.fullname;
+    document.querySelector('[name="message"]').value = data.messge;
+  }
 })();
 
 const openPopup = (element) => {
@@ -282,7 +289,6 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   if (invalid > 0) {
     e.preventDefault();
   } else {
-    e.preventDefault();
     localStorage.clear();
     const userInfo = {
       firstname: document.querySelector('[name="firstname"]').value,

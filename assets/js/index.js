@@ -79,7 +79,7 @@ const projects = [
     image: 'accomodation.png',
     description: 'Founded in 2018 in Rwanda, SmartBookings.rw has grown from a small to one of the best leading digital travel companies. Part of Events Factory Rwanda. (NASDAQ: BKNG), SmartBookings.rw mission is to make it easier for everyone to experience the world.',
     livelink: 'https://smartbookings.rw/Home/',
-    repository: 'https://github.com/events-factory/smartbookings',
+    repository: '#',
   },
   {
     name: 'Accreditation System',
@@ -87,7 +87,7 @@ const projects = [
     image: 'accreditation.png',
     description: 'Accreditation is an official, written approval for the operation of a specific system in a specific environment, as documented in the certification report.',
     livelink: 'https://accreditation.smartevent.rw/Login/',
-    repository: 'https://github.com/events-factory/Accreditation',
+    repository: '#',
   },
   {
     name: 'Membership System',
@@ -95,7 +95,7 @@ const projects = [
     image: 'membership.png',
     description: 'Membership System software helps you manage your members , grow your membership base, and run your business from anywhere.',
     livelink: 'https://app.smartevent.rw/Auth/SigIn',
-    repository: 'https://github.com/events-factory/membership-system',
+    repository: '#',
   },
   {
     name: 'Registration System',
@@ -103,7 +103,7 @@ const projects = [
     image: 'registration.png',
     description: 'Image result for registration system Registration systems, the third part of a demographic data system, are generally designed to count vital events: births, deaths, marriages, and entries and exits at international boundaries.',
     livelink: 'https://register.smartevent.rw/Authentication/',
-    repository: 'https://github.com/events-factory/registration',
+    repository: '#',
   },
   {
     name: 'African Insurance Organisation Website',
@@ -111,7 +111,7 @@ const projects = [
     image: 'aiosystem.png',
     description: 'The African Insurance Organisation (AIO), established in 1972, is a non-governmental organisation recognised by many African governments.',
     livelink: 'https://aimemalaika.github.io/portofolio',
-    repository: 'https://github.com/aimemalaika/portofolio',
+    repository: '#',
   },
 ];
 (() => {
